@@ -1,0 +1,37 @@
+import { useEffect, useRef, useState } from 'react';
+
+export function useRevealOnScroll<T extends HTMLElement>() {
+	const ref = useRef<T | null>(null);
+	const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+		const node = ref.current;
+
+		if (!node) {
+			return;
+		}
+
+		if (typeof IntersectionObserver === 'undefined') {
+			setIsVisible(true);
+			return;
+		}
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) {
+						setIsVisible(true);
+						observer.unobserve(entry.target);
+					}
+				}
+			},
+			{ threshold: 0.08, rootMargin: '0px 0px -40px 0px' },
+		);
+
+		observer.observe(node);
+
+		return () => observer.disconnect();
+	}, []);
+
+	return { ref, isVisible };
+}
