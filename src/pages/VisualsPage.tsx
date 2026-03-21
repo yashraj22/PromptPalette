@@ -76,7 +76,7 @@ export function VisualsPage() {
 					<SectionHeader
 						badge="06"
 						title="Prompt Keywords Cheat Sheet"
-						description="Quick-reference categories. Click any keyword to copy it."
+						description="Quick-reference categories, including Mood, Product, and Content. Click any keyword to copy it."
 					/>
 					<div className="cheat-grid">
 						{cheatSheetCategories.map((category) => (

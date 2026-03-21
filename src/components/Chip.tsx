@@ -1,17 +1,19 @@
+import type { ButtonHTMLAttributes, MouseEvent } from 'react';
 import { useState } from 'react';
 import { useCopyToClipboard } from '../hooks/useCopyToClipboard';
 
-interface ChipProps {
+interface ChipProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
 	label: string;
 	variant?: 'default' | 'uiux';
 }
 
-export function Chip({ label, variant = 'default' }: ChipProps) {
+export function Chip({ label, variant = 'default', className = '', onClick, ...props }: ChipProps) {
 	const [copied, setCopied] = useState(false);
 	const { copyText } = useCopyToClipboard();
 
-	const handleClick = async () => {
+	const handleClick = async (event: MouseEvent<HTMLButtonElement>) => {
 		const success = await copyText(label);
+		onClick?.(event);
 		if (!success) {
 			return;
 		}
@@ -22,9 +24,10 @@ export function Chip({ label, variant = 'default' }: ChipProps) {
 
 	return (
 		<button
-			className={`chip${variant === 'uiux' ? ' uiux-chip' : ''}${copied ? ' copied' : ''}`}
+			className={`chip${variant === 'uiux' ? ' uiux-chip' : ''}${copied ? ' copied' : ''}${className ? ` ${className}` : ''}`}
 			type="button"
-			onClick={() => void handleClick()}>
+			onClick={(event) => void handleClick(event)}
+			{...props}>
 			{label}
 		</button>
 	);

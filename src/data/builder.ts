@@ -1,10 +1,12 @@
 import type { BuilderCategoryData } from '../types/content';
 
 export const builderCategories: BuilderCategoryData[] = [
-	{ label: 'Style', options: ['glassmorphism', 'neumorphism', 'neubrutalism', 'minimalist', 'dark luxury', 'flat design', 'cyberpunk', 'vaporwave', 'art deco', 'bauhaus', 'claymorphism', 'memphis'] },
-	{ label: 'Layout', options: ['bento grid', 'split screen', 'card grid', 'sidebar layout', 'masonry', 'single column', 'full-bleed hero', 'asymmetric'] },
-	{ label: 'Typography', options: ['serif', 'sans-serif', 'monospace', 'display type', 'handwritten', 'bold weight', 'light weight', 'condensed'] },
-	{ label: 'Color', options: ['monochromatic', 'complementary', 'pastel', 'neon', 'earth tones', 'dark mode', 'warm palette', 'cool palette', 'jewel tones'] },
-	{ label: 'Effects', options: ['gradient', 'grain texture', 'blur', 'neon glow', 'shadow elevation', 'parallax', 'glass overlay', 'dot grid', 'scan lines'] },
-	{ label: 'Mood', options: ['elegant', 'playful', 'futuristic', 'minimal', 'luxurious', 'moody', 'energetic', 'serene', 'dramatic', 'sophisticated'] },
+	{ label: 'Style', options: ['glassmorphism', 'neumorphism', 'neubrutalism', 'minimalist', 'dark luxury', 'flat design', 'cyberpunk', 'vaporwave', 'art deco', 'bauhaus', 'claymorphism', 'memphis', 'swiss style', 'editorial luxury', 'brutalist web', 'scandinavian minimal', 'tech noir', 'eco modern', 'retro / y2k', 'organic / nature', 'skeuomorphism', 'material design', 'playful maximalism', 'retro futurism'] },
+	{ label: 'Layout', options: ['bento grid', 'split screen', 'card grid', 'sidebar layout', 'masonry', 'single column', 'full-bleed hero', 'asymmetric', 'dashboard canvas', 'portal layout', 'documentation shell', 'hero stack', 'comparison layout', 'timeline layout', 'magazine layout', 'z-pattern layout', 'f-pattern layout', 'holy grail layout', 'sticky scroll', 'overlapping elements', 'carousel showcase', 'catalog layout'] },
+	{ label: 'Typography', options: ['serif', 'sans-serif', 'monospace', 'display type', 'handwritten', 'bold weight', 'light weight', 'condensed', 'editorial italics', 'tabular numerals', 'fluid type scale', 'micro labels', 'letter spacing', 'case & transform', 'variable fonts', 'slab serif', 'font pairing', 'readable body copy', 'responsive type scale', 'high-contrast pairing'] },
+	{ label: 'Color', options: ['monochromatic', 'complementary', 'pastel', 'neon', 'earth tones', 'dark mode', 'warm palette', 'cool palette', 'jewel tones', 'muted luxury', 'oceanic', 'sunset heat', 'forest modern', 'corporate calm', 'cyber teal', 'desert editorial', 'analogous', 'triadic', 'split-complementary', 'neutral / greyscale', 'duotone', 'candy pop'] },
+	{ label: 'Effects', options: ['gradient', 'grain texture', 'blur', 'neon glow', 'shadow elevation', 'parallax', 'glass overlay', 'dot grid', 'scan lines', 'inner shadow', 'animated gradient', 'vignette', 'reflection gloss', 'backdrop tint', 'pattern overlay', 'border radius', 'micro-interactions', 'gradient mesh', 'halftone dots', 'noise gradient'] },
+	{ label: 'Mood', options: ['elegant', 'playful', 'futuristic', 'minimal', 'luxurious', 'moody', 'energetic', 'serene', 'dramatic', 'sophisticated', 'cinematic', 'editorial', 'raw', 'calm', 'optimistic', 'mysterious'] },
+	{ label: 'Product', options: ['SaaS dashboard', 'portfolio site', 'ecommerce storefront', 'agency landing page', 'finance app', 'developer tool', 'knowledge base', 'AI product UI', 'course platform', 'healthcare portal'] },
+	{ label: 'Content', options: ['product-led copy', 'utility-first labels', 'editorial storytelling', 'concise microcopy', 'premium brand voice', 'conversion-focused messaging', 'technical documentation tone'] },
 ];
