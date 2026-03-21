@@ -6,12 +6,33 @@ export function Footer() {
 					Prompt Palette v2 - A design vocabulary reference for AI prompting
 				</p>
 				<p>
-					<a
-						href="https://www.perplexity.ai/computer"
-						target="_blank"
-						rel="noopener noreferrer">
-						Created with Perplexity Computer
-					</a>
+					<span>
+						{/* <div className="author-credits">
+							Created by 						<a
+								href="https://www.perplexity.ai/computer"
+								target="_blank"
+								rel="noopener noreferrer">
+								<b>notyaxsh</b>
+							</a>
+						</div> */}
+
+						Created with{" "}
+						<a
+							href="https://www.perplexity.ai/computer"
+							target="_blank"
+							rel="noopener noreferrer">
+							<b>Perplexity Computer</b>
+						</a>{" "}
+						&{" "}
+						<a
+							href="https://t3.codes/"
+							target="_blank"
+							rel="noopener noreferrer">
+							<b>T3 Code</b>
+						</a>{" "}
+						‪‪❤︎‬
+
+					</span>
 				</p>
 			</div>
 		</footer>
