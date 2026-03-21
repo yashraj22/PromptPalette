@@ -24,7 +24,15 @@ export interface StyleCardData {
 		| 'memphis'
 		| 'bauhaus'
 		| 'vaporwave'
-		| 'clay';
+		| 'clay'
+		| 'swiss'
+		| 'editorial'
+		| 'webbrutal'
+		| 'scandi'
+		| 'technoir'
+		| 'maximal'
+		| 'ecomodern'
+		| 'retrofuture';
 }
 
 export interface LayoutCardData {

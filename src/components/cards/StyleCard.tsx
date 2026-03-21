@@ -36,6 +36,22 @@ function renderStyleDemo(demoKey: StyleCardData['demoKey']) {
 			return <div className="demo-vaporwave"><div className="vw-grid"></div><div className="vw-text">A E S T H E T I C</div></div>;
 		case 'clay':
 			return <div className="demo-clay"><div className="clay-card"><div className="clay-circle"></div><div className="clay-text">Clay UI</div></div></div>;
+		case 'swiss':
+			return <div className="demo-swiss"><div className="swiss-grid"></div><div className="swiss-bar"></div><div className="swiss-type"><span>Neue</span><span>Grid</span><span>1960</span></div></div>;
+		case 'editorial':
+			return <div className="demo-editorial"><div className="editorial-frame"></div><div className="editorial-copy"><div className="editorial-kicker">Issue 09</div><div className="editorial-title">Atelier</div><div className="editorial-line"></div></div></div>;
+		case 'webbrutal':
+			return <div className="demo-webbrutal"><div className="wb-window"><div className="wb-top"></div><div className="wb-body"><span>&lt;RAW&gt;</span><span>grid_on</span><span>no mercy</span></div></div></div>;
+		case 'scandi':
+			return <div className="demo-scandi"><div className="scandi-card"><div className="scandi-stone"></div><div className="scandi-text">Nord Form</div><div className="scandi-rule"></div></div></div>;
+		case 'technoir':
+			return <div className="demo-technoir"><div className="technoir-glow"></div><div className="technoir-panel"><div className="technoir-title">NOIR</div><div className="technoir-meta">signal / 77%</div></div></div>;
+		case 'maximal':
+			return <div className="demo-maximal"><div className="maximal-burst">WOW</div><div className="maximal-sticker maximal-star"></div><div className="maximal-sticker maximal-dot"></div><div className="maximal-sticker maximal-wave">~</div></div>;
+		case 'ecomodern':
+			return <div className="demo-ecomodern"><div className="eco-arch"></div><div className="eco-leaf eco-leaf-a"></div><div className="eco-leaf eco-leaf-b"></div><div className="eco-label">eco modern</div></div>;
+		case 'retrofuture':
+			return <div className="demo-retrofuture"><div className="rf-sun"></div><div className="rf-ring"></div><div className="rf-grid"></div><div className="rf-chrome">2099</div></div>;
 	}
 }
 

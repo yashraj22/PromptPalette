@@ -115,4 +115,60 @@ export const styleCards: StyleCardData[] = [
 		chips: [chip('claymorphism'), chip('3D clay look'), chip('pastel inflated'), chip('soft 3D')],
 		demoKey: 'clay',
 	},
+	{
+		title: 'Swiss / International',
+		description:
+			'Grid-first layouts, precise spacing, sans-serif typography, and ruthless clarity with minimal decoration.',
+		chips: [chip('swiss style'), chip('international typographic style'), chip('grid systems'), chip('editorial minimal')],
+		demoKey: 'swiss',
+	},
+	{
+		title: 'Editorial Luxury',
+		description:
+			'Magazine-inspired composition with serif headlines, restrained palettes, and refined image-led storytelling.',
+		chips: [chip('editorial luxury'), chip('fashion magazine'), chip('serif headlines'), chip('high-end editorial')],
+		demoKey: 'editorial',
+	},
+	{
+		title: 'Brutalist Web',
+		description:
+			'Raw HTML energy with unapologetic typography, harsh contrast, and function-forward composition.',
+		chips: [chip('web brutalism'), chip('raw html aesthetic'), chip('harsh contrast'), chip('anti-polish UI')],
+		demoKey: 'webbrutal',
+	},
+	{
+		title: 'Scandinavian Minimal',
+		description:
+			'Warm neutrals, calm whitespace, soft utility, and human-centered restraint with tactile materials.',
+		chips: [chip('scandinavian minimal'), chip('soft neutrals'), chip('calm modernism'), chip('warm minimal')],
+		demoKey: 'scandi',
+	},
+	{
+		title: 'Tech Noir',
+		description:
+			'Dark cinematic interfaces, subtle glow, dense blacks, and sharp futuristic accents without full neon overload.',
+		chips: [chip('tech noir'), chip('cinematic dark UI'), chip('futuristic black interface'), chip('subtle neon')],
+		demoKey: 'technoir',
+	},
+	{
+		title: 'Playful Maximalism',
+		description:
+			'Expressive color, oversized type, layered stickers, and high-energy visual collisions that still feel curated.',
+		chips: [chip('playful maximalism'), chip('expressive color'), chip('oversized typography'), chip('layered graphics')],
+		demoKey: 'maximal',
+	},
+	{
+		title: 'Eco Modern',
+		description:
+			'Nature-led digital design with muted greens, organic shapes, and a premium sustainable brand tone.',
+		chips: [chip('eco modern'), chip('sustainable brand aesthetic'), chip('muted greens'), chip('biophilic UI')],
+		demoKey: 'ecomodern',
+	},
+	{
+		title: 'Retro Futurism',
+		description:
+			'Optimistic future-facing visuals through chrome reflections, synth gradients, and nostalgic sci-fi geometry.',
+		chips: [chip('retro futurism'), chip('chrome accents'), chip('sci-fi nostalgia'), chip('future nostalgia')],
+		demoKey: 'retrofuture',
+	},
 ];
