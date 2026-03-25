@@ -78,6 +78,8 @@
 	--glow-color: rgba(0, 0, 0, 0.02);
 	--badge-bg: rgba(0, 0, 0, 0.06);
 	--badge-text: #666;
+
+	color-scheme: light dark;
 }
 
 /* --- Scrollbar --- */
@@ -4460,11 +4462,14 @@ code,
 .footer b:hover {
 	color: var(--text-primary);
 }
-
-/* .footer b {
+/* 
+.footer b {
 	color: #b8b9ba;
 } */
 
+.footer b {
+	color: light-dark(#b8b9ba, #545454);
+}
 /* --- Scroll Reveal --- */
 .reveal {
 	opacity: 0;
